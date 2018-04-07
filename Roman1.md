@@ -19,7 +19,7 @@ public:
         a['L']=50;
         a['D']=500;
         int r = 0;
-        res = a[s[0]];
+        r = a[s[0]];
         for(int i=1;i<s.size();i++)
         {
             if(a[s[i-1]]>=a[s[i]])
