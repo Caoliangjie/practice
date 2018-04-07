@@ -1,8 +1,9 @@
 # practice
-Daily practice
+Roman
 ## 问题分析：
-#### 二进制数相加
-补全较短二进制字符串然后对应相加
+#### 罗马数字转整数
+给定一个罗马数字，将其转换成整数。
+返回的结果要求在 1 到 3999 的范围内
 ## 编程实现：
 ```C++
 class Solution {
@@ -10,26 +11,25 @@ public:
     int romanToInt(string s) 
     {
         map<char,int>q;
-        q['I']=1;
-        q['X']=10;
-        q['C']=100;
-        q['M']=1000;
-        q['V']=5;
-        q['L']=50;
-        q['D']=500;
-        int res = 0;
-        res = q[s[0]];
+        a['I']=1;
+        a['X']=10;
+        a['C']=100;
+        a['M']=1000;
+        a['V']=5;
+        a['L']=50;
+        a['D']=500;
+        int r = 0;
+        res = a[s[0]];
         for(int i=1;i<s.size();i++)
         {
-            if(q[s[i-1]]>=q[s[i]])
-                res=q[s[i]]+res;
+            if(a[s[i-1]]>=a[s[i]])
+                r=a[s[i]]+r;
             else                  
-                res = res + q[s[i]]-2*q[s[i-1]];    
+                r = r + a[s[i]]-2*a[s[i-1]];    
         }
         return res; 
     }
 };
 ```
 ## 总结体会：
-二进制数相加并且保存在string中需要考虑如何将string和int之间互相转换且每位相加时可能进位会影响相加的结果。
-
+罗马数字的符号要弄清楚，并且注意罗马数字的技术规则。
