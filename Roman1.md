@@ -27,7 +27,7 @@ public:
             else                  
                 r = r + a[s[i]]-2*a[s[i-1]];    
         }
-        return res; 
+        return r; 
     }
 };
 ```
