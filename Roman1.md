@@ -10,7 +10,7 @@ class Solution {
 public:
     int romanToInt(string s) 
     {
-        map<char,int>q;
+        map<char,int>a;
         a['I']=1;
         a['X']=10;
         a['C']=100;
