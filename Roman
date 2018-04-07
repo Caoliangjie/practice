@@ -1,4 +1,7 @@
-class Solution {
+## 问题分析：
+#### 二进制数相加
+补全较短二进制字符串然后对应相加
+## 编程实现：class Solution {
 public:
     int romanToInt(string s) 
     {
