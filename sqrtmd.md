@@ -15,7 +15,7 @@ public:
    long  a=x;  
     while (a*a> x)  
         a= (a+ x/a) / 2;  
-    return r;  
+    return a;  
     }
 };
 ```
